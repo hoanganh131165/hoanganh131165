@@ -1,1 +1,2 @@
 D:\Calculator\Calculator\bin\Debug\Calculator.exe.config
+D:\Calculator\hoanganh131165\Calculator\bin\Debug\Calculator.exe.config
