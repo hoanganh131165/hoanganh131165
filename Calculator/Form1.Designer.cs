@@ -31,10 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt1 = new System.Windows.Forms.TextBox();
-            this.txt2 = new System.Windows.Forms.TextBox();
-            this.lbKq = new System.Windows.Forms.Label();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtKetQua = new System.Windows.Forms.Label();
             this.btCong = new System.Windows.Forms.Button();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -70,29 +71,29 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Ket qua";
             // 
-            // txt1
+            // txtA
             // 
-            this.txt1.Location = new System.Drawing.Point(269, 42);
-            this.txt1.Name = "txt1";
-            this.txt1.Size = new System.Drawing.Size(101, 20);
-            this.txt1.TabIndex = 1;
+            this.txtA.Location = new System.Drawing.Point(269, 42);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(101, 20);
+            this.txtA.TabIndex = 1;
             // 
-            // txt2
+            // txtB
             // 
-            this.txt2.Location = new System.Drawing.Point(269, 94);
-            this.txt2.Name = "txt2";
-            this.txt2.Size = new System.Drawing.Size(101, 20);
-            this.txt2.TabIndex = 1;
+            this.txtB.Location = new System.Drawing.Point(269, 94);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(101, 20);
+            this.txtB.TabIndex = 1;
             // 
-            // lbKq
+            // txtKetQua
             // 
-            this.lbKq.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lbKq.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbKq.ForeColor = System.Drawing.Color.Coral;
-            this.lbKq.Location = new System.Drawing.Point(265, 163);
-            this.lbKq.Name = "lbKq";
-            this.lbKq.Size = new System.Drawing.Size(113, 28);
-            this.lbKq.TabIndex = 0;
+            this.txtKetQua.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtKetQua.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKetQua.ForeColor = System.Drawing.Color.Coral;
+            this.txtKetQua.Location = new System.Drawing.Point(265, 163);
+            this.txtKetQua.Name = "txtKetQua";
+            this.txtKetQua.Size = new System.Drawing.Size(113, 28);
+            this.txtKetQua.TabIndex = 0;
             // 
             // btCong
             // 
@@ -103,15 +104,26 @@
             this.btCong.Text = "Cong";
             this.btCong.UseVisualStyleBackColor = true;
             // 
+            // btTru
+            // 
+            this.btTru.Location = new System.Drawing.Point(222, 240);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(84, 30);
+            this.btTru.TabIndex = 2;
+            this.btTru.Text = "Tru";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 325);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.btCong);
-            this.Controls.Add(this.txt2);
-            this.Controls.Add(this.txt1);
-            this.Controls.Add(this.lbKq);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
+            this.Controls.Add(this.txtKetQua);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -127,10 +139,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt1;
-        private System.Windows.Forms.TextBox txt2;
-        private System.Windows.Forms.Label lbKq;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.Label txtKetQua;
         private System.Windows.Forms.Button btCong;
+        private System.Windows.Forms.Button btTru;
     }
 }
 
